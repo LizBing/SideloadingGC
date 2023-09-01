@@ -23,7 +23,6 @@
  */
 
 #include "gc/epsilon/sideloading/sideloadingArguments.hpp"
-#include "gc/epsilon/sideloading/sideloadingHeap.hpp"
 #include "precompiled.hpp"
 #include "gc/epsilon/epsilonArguments.hpp"
 #include "gc/epsilon/epsilonHeap.hpp"
