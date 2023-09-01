@@ -27,6 +27,8 @@
 
 #include "memory/allocation.hpp"
 
+#include "gc/epsilon/sideloading/gcCause_sideloading.hpp"
+
 //
 // This class exposes implementation details of the various
 // collector(s), and we need to be very careful with it. If
@@ -89,6 +91,8 @@ class GCCause : public AllStatic {
     _z_allocation_stall,
     _z_proactive,
     _z_high_usage,
+
+    SIDELOADING_GCCAUSES_DO(SIDELOADING_GCCAUSE_ENUM)
 
     _last_gc_cause
   };
