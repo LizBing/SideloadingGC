@@ -8,8 +8,8 @@
  *
  */
 
-#ifndef GC_EPSILON_SIDELOADING_SIDELOADING_GLOBALS_
-#define GC_EPSILON_SIDELOADING_SIDELOADING_GLOBALS_
+#ifndef SHARE_GC_EPSILON_SIDELOADING_SIDELOADING_GLOBALS_
+#define SHARE_GC_EPSILON_SIDELOADING_SIDELOADING_GLOBALS_
 
 #define GC_EPSILON_SIDELOADING_FLAGS(develop,                                           \
                                      develop_pd,                                        \
@@ -23,4 +23,4 @@
             "Sideload your own GC onto Epsilon. Team Relight extension.") \
 
 
-#endif // GC_EPSILON_SIDELOADING_SIDELOADING_GLOBALS_
+#endif // SHARE_GC_EPSILON_SIDELOADING_SIDELOADING_GLOBALS_

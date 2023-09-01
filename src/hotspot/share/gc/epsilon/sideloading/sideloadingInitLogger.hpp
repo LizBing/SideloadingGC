@@ -18,4 +18,4 @@ public:
 };
 
 
-#endif
+#endif // SHARE_GC_EPSILON_SIDELOADING_SIDELOADINGINITLOGGER_

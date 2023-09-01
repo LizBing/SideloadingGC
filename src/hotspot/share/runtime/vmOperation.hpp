@@ -25,8 +25,9 @@
 #ifndef SHARE_RUNTIME_VMOPERATION_HPP
 #define SHARE_RUNTIME_VMOPERATION_HPP
 
-#include "gc/epsilon/sideloading/sideloadingVMOperations.hpp"
 #include "memory/allocation.hpp"
+
+#include "gc/epsilon/sideloading/vmOperation_sideloading.hpp"
 
 // The following classes are used for operations
 // initiated by a Java thread but that must
