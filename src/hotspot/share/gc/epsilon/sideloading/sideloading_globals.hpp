@@ -19,7 +19,7 @@
                                      range,                                             \
                                      constraint) \
                                       \
-    product(bool, EpsilonSideloading, true, EXPERIMENTAL, \
+    product(bool, EpsilonSideloading, false, EXPERIMENTAL, \
             "Sideload your own GC onto Epsilon. Team Relight extension.") \
 
 
