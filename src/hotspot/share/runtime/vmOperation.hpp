@@ -113,7 +113,7 @@
   template(JFROldObject)                          \
   template(JvmtiPostObjectFree) \
    \
-  SIDELOADINGGC_VMOPERATIONS_DO(template)
+  SIDELOADINGGC_VM_OPERATIONS_DO(template)
 
 class Thread;
 class outputStream;
