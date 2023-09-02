@@ -23,4 +23,6 @@
 #define VM_INT_CONSTANTS_EPSILON_SIDELOADING_GC(declare_constant,                \
                                                 declare_constant_with_value)
 
+#define VM_LONG_CONSTANTS_EPSILON_SIDELOADING_GC(declare_constant) \
+
 #endif

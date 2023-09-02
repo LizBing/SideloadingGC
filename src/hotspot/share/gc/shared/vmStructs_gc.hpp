@@ -292,6 +292,7 @@
   declare_constant(Generation::GenGrain)                                    \
 
 #define VM_LONG_CONSTANTS_GC(declare_constant)                              \
-  ZGC_ONLY(VM_LONG_CONSTANTS_ZGC(declare_constant))
+  ZGC_ONLY(VM_LONG_CONSTANTS_ZGC(declare_constant)) \
+  EPSILONGC_ONLY(VM_LONG_CONSTANTS_EPSILON_SIDELOADING_GC(declare_constant))
 
 #endif // SHARE_GC_SHARED_VMSTRUCTS_GC_HPP
