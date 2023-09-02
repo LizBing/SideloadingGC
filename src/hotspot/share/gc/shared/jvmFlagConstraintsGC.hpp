@@ -35,6 +35,10 @@
 #include "gc/parallel/jvmFlagConstraintsParallel.hpp"
 #endif
 
+#if INCLUDE_EPSILONGC
+#include "gc/epsilon/sideloading/jvmFlagConstraintsSideloading.hpp"
+#endif
+
 /*
  * Here we have GC arguments constraints functions, which are called automatically
  * whenever flag's value changes. If the constraint fails the function should return
@@ -76,6 +80,8 @@ JVMFlag::Error MaxPLABSizeBounds(const char* name, size_t value, bool verbose);
 #define GC_CONSTRAINTS(f)                      \
   SHARED_GC_CONSTRAINTS(f)                     \
   G1GC_ONLY(G1_GC_CONSTRAINTS(f))              \
-  PARALLELGC_ONLY(PARALLEL_GC_CONSTRAINTS(f))
+  PARALLELGC_ONLY(PARALLEL_GC_CONSTRAINTS(f)) \
+   \
+  EPSILON_ONLY(EPSILON_SIDELOADING_GC_CONSTRAINTS(f))
 
 #endif // SHARE_GC_SHARED_JVMFLAGCONSTRAINTSGC_HPP
