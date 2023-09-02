@@ -25,13 +25,18 @@
 #ifndef SHARE_GC_SHARED_VERIFYOPTION_HPP
 #define SHARE_GC_SHARED_VERIFYOPTION_HPP
 
+#include "gc/epsilon/sideloading/verifyOption_sideloading.hpp"
+
 enum VerifyOption {
       VerifyOption_Default = 0,
 
       // G1
       VerifyOption_G1UsePrevMarking = VerifyOption_Default,
       VerifyOption_G1UseNextMarking = VerifyOption_G1UsePrevMarking + 1,
-      VerifyOption_G1UseFullMarking = VerifyOption_G1UseNextMarking + 1
+      VerifyOption_G1UseFullMarking = VerifyOption_G1UseNextMarking + 1,
+
+      // Epsilon Sideloading
+      EPSILON_SIDELOADING_GC_VERIFYOPTIONS_DO(EPSILON_SIDELOADING_GC_VERIFYOPTIONS_ENUM)
 };
 
 #endif // SHARE_GC_SHARED_VERIFYOPTION_HPP
