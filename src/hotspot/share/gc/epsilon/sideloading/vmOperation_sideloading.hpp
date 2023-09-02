@@ -12,7 +12,7 @@
 
 // add your VM operations into this macro
 // pattern: f(VM_xxx)
-#define SIDELOADINGGC_VM_OPERATIONS_DO(f) \
+#define EPSILON_SIDELOADING_GC_VM_OPERATIONS_DO(f) \
 
 
 #endif // SHARE_GC_EPSILON_SIDELOADING_VMOPERATION_SIDELOADING_

@@ -92,7 +92,7 @@ class GCCause : public AllStatic {
     _z_proactive,
     _z_high_usage,
 
-    SIDELOADING_GCCAUSES_DO(SIDELOADING_GCCAUSE_ENUM)
+    EPSILON_SIDELOADING_GCCAUSES_DO(SIDELOADING_GCCAUSE_ENUM)
 
     _last_gc_cause
   };

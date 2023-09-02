@@ -12,22 +12,22 @@
 
 #include "gc/shared/barrierSet.hpp"
 
-class SideloadingBarrierSet : public BarrierSet {
+class EpsilonSideloadingBarrierSet : public BarrierSet {
 public:
-    template <DecoratorSet decorators, typename BarrierSetT = SideloadingBarrierSet>
+    template <DecoratorSet decorators, typename BarrierSetT = EpsilonSideloadingBarrierSet>
     class AccessBarrier: public BarrierSet::AccessBarrier<decorators, BarrierSetT> {
         using Raw = BarrierSet::AccessBarrier<decorators, BarrierSetT>;
     };
 };
 
 template<>
-struct BarrierSet::GetName<SideloadingBarrierSet> {
-    static const BarrierSet::Name value = BarrierSet::SideloadingBarrierSet;
+struct BarrierSet::GetName<EpsilonSideloadingBarrierSet> {
+    static const BarrierSet::Name value = BarrierSet::EpsilonSideloadingBarrierSet;
 };
 
 template<>
-struct BarrierSet::GetType<BarrierSet::SideloadingBarrierSet> {
-    using type = ::SideloadingBarrierSet;
+struct BarrierSet::GetType<BarrierSet::EpsilonSideloadingBarrierSet> {
+    using type = ::EpsilonSideloadingBarrierSet;
 };
 
 

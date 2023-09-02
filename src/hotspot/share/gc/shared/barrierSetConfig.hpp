@@ -32,7 +32,7 @@
   f(CardTableBarrierSet)                             \
   EPSILONGC_ONLY( \
     f(EpsilonBarrierSet) \
-    f(SideloadingBarrierSet) \
+    f(EpsilonSideloadingBarrierSet) \
   )               \
   G1GC_ONLY(f(G1BarrierSet))                         \
   SHENANDOAHGC_ONLY(f(ShenandoahBarrierSet))         \

@@ -139,7 +139,7 @@ const char* GCCause::to_string(GCCause::Cause cause) {
     case _z_high_usage:
       return "High Usage";
 
-    SIDELOADING_GCCAUSES_DO(SIDELOADING_GCCAUSE_RET_CSTR)
+    EPSILON_SIDELOADING_GCCAUSES_DO(SIDELOADING_GCCAUSE_RET_CSTR)
 
     case _last_gc_cause:
       return "ILLEGAL VALUE - last gc cause - ILLEGAL VALUE";

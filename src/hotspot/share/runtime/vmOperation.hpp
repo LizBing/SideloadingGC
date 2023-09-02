@@ -113,7 +113,7 @@
   template(JFROldObject)                          \
   template(JvmtiPostObjectFree) \
    \
-  SIDELOADINGGC_VM_OPERATIONS_DO(template)
+  EPSILON_SIDELOADING_GC_VM_OPERATIONS_DO(template)
 
 class Thread;
 class outputStream;

@@ -38,18 +38,18 @@
   nonstatic_field(EpsilonHeap, _virtual_space, VirtualSpace)        \
   nonstatic_field(EpsilonHeap, _space, ContiguousSpace*) \
    \
-  VM_STRUCTS_EPSILON_SIDELOADINGGC(nonstatic_field, volatile_nonstatic_field, static_field)
+  VM_STRUCTS_EPSILON_SIDELOADING_GC(nonstatic_field, volatile_nonstatic_field, static_field)
 
 #define VM_TYPES_EPSILONGC(declare_type,                            \
                           declare_toplevel_type,                    \
                           declare_integer_type)                     \
   declare_type(EpsilonHeap, CollectedHeap) \
    \
-  VM_TYPES_EPSILON_SIDELOADINGGC(declare_type, declare_toplevel_type, declare_integer_type)
+  VM_TYPES_EPSILON_SIDELOADING_GC(declare_type, declare_toplevel_type, declare_integer_type)
 
 #define VM_INT_CONSTANTS_EPSILONGC(declare_constant,                \
                                   declare_constant_with_value) \
                                    \
-  VM_INT_CONSTANTS_EPSILON_SIDELOADINGGC(declare_constant, declare_constant_with_value)
+  VM_INT_CONSTANTS_EPSILON_SIDELOADING_GC(declare_constant, declare_constant_with_value)
 
 #endif // SHARE_GC_EPSILON_VMSTRUCTS_EPSILON_HPP

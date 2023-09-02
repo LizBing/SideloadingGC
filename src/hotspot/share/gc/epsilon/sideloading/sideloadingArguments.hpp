@@ -12,7 +12,7 @@
 
 #include "gc/shared/gcArguments.hpp"
 
-class SideloadingArguments : public GCArguments {
+class EpsilonSideloadingArguments : public GCArguments {
     friend class EpsilonArguments;
 
 private:

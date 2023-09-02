@@ -40,7 +40,7 @@ private:
   virtual CollectedHeap* create_heap();
 
 private:
-  SideloadingArguments sideloadingArguments;
+  EpsilonSideloadingArguments sideloadingArguments;
 };
 
 #endif // SHARE_GC_EPSILON_EPSILONARGUMENTS_HPP
