@@ -11,16 +11,16 @@
 #define SHARE_GC_EPSILON_SIDELOADING_VMSTRUCTS_
 
 #define VM_STRUCTS_EPSILON_SIDELOADING_GC(nonstatic_field,                       \
-                                         volatile_nonstatic_field,               \
-                                         static_field)                           \
+                                          volatile_nonstatic_field,               \
+                                          static_field)                           \
 
 
 #define VM_TYPES_EPSILON_SIDELOADING_GC(declare_type,                            \
-                                       declare_toplevel_type,                    \
-                                       declare_integer_type)                     \
+                                        declare_toplevel_type,                    \
+                                        declare_integer_type)                     \
 
 
 #define VM_INT_CONSTANTS_EPSILON_SIDELOADING_GC(declare_constant,                \
-                                               declare_constant_with_value)
+                                                declare_constant_with_value)
 
 #endif
