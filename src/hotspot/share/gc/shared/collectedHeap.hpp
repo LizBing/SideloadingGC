@@ -39,6 +39,8 @@
 #include "utilities/formatBuffer.hpp"
 #include "utilities/growableArray.hpp"
 
+#include "gc/epsilon/sideloading/sideloadingHeap.hpp"
+
 // A "CollectedHeap" is an implementation of a java heap for HotSpot.  This
 // is an abstract class: there may be many different kinds of heaps.  This
 // class defines the functions that a heap must implement, and contains
@@ -168,7 +170,9 @@ class CollectedHeap : public CHeapObj<mtInternal> {
     G1,
     Epsilon,
     Z,
-    Shenandoah
+    Shenandoah,
+
+    EPSILON_SIDELOADING_HEAP_NAME
   };
 
  protected:
